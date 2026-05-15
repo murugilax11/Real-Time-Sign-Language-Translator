@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SignSpeak — Real-Time Sign Language Translator</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
@@ -13,12 +14,16 @@
   <!--NAVBAR-->
   <nav class="navbar">
     <div class="nav-brand">
-      <span class="nav-icon">🤟</span>
+      <span class="nav-icon">
+  <i class="fa-solid fa-hands"></i>
+</span>
       <span class="nav-title">SignSpeak</span>
       <span class="nav-sub">AI Sign Language Translator</span>
     </div>
     <button class="theme-toggle" id="themeToggle" title="Toggle light/dark mode">
-      <span class="toggle-icon">🌙</span>
+      <span class="toggle-icon">
+  <i class="fa-solid fa-moon"></i>
+</span>
     </button>
   </nav>
 
@@ -34,7 +39,7 @@
     <div class="panels">
       <section class="panel webcam-panel">
         <div class="panel-header">
-          <h2 class="panel-title">📷 Live Camera</h2>
+          <h2 class="panel-title"><i class="fa-solid fa-camera"></i>Live Camera</h2>
           <div class="recording-badge" id="recordingBadge">
             <span class="rec-dot"></span> REC
           </div>
@@ -58,14 +63,14 @@
         </div>
 
         <div class="camera-controls">
-          <button class="btn btn-primary" id="startBtn">▶ Start Camera</button>
-          <button class="btn btn-danger" id="stopBtn" disabled>⏹ Stop Camera</button>
+          <button class="btn btn-primary" id="startBtn"><i class="fa-solid fa-play"></i> Start Camera</button>
+          <button class="btn btn-danger" id="stopBtn" disabled><i class="fa-solid fa-stop"></i> Stop Camera</button>
         </div>
       </section>
 
       <section class="panel output-panel">
         <div class="panel-header">
-          <h2 class="panel-title">📊 Detection Output</h2>
+          <h2 class="panel-title"><i class="fa-solid fa-chart-bar"></i> Detection Output</h2>
         </div>
 
         <div class="output-card gesture-card">
@@ -89,21 +94,21 @@
         </div>
 
         <div class="action-controls">
-          <button class="btn btn-speak" id="speakBtn">🔊 Speak</button>
-          <button class="btn btn-outline" id="clearBtn">🗑 Clear</button>
-          <button class="btn btn-outline" id="replayBtn">🔁 Replay</button>
+          <button class="btn btn-speak" id="speakBtn"><i class="fa-solid fa-volume-high"></i>Speak</button>
+          <button class="btn btn-outline" id="clearBtn"><i class="fa-solid fa-trash"></i> Clear</button>
+          <button class="btn btn-outline" id="replayBtn"><i class="fa-solid fa-repeat"></i> Replay</button>
         </div>
 
         <div class="output-card instructions-card">
           <div class="output-label">Supported Gestures</div>
           <div class="gesture-chips">
-            <span class="chip">👋 Hello</span>
-            <span class="chip">👍 Yes</span>
-            <span class="chip">🤚 No</span>
-            <span class="chip">🙏 Thanks</span>
-            <span class="chip">✊ A</span>
-            <span class="chip">☝️ B</span>
-            <span class="chip">✌️ C</span>
+            <span class="chip"><i class="fa-solid fa-hand"></i> Hello</span>
+            <span class="chip"><i class="fa-solid fa-thumbs-up"></i> Yes</span>
+            <span class="chip"><i class="fa-solid fa-hand-paper"></i> No</span>
+            <span class="chip"><i class="fa-solid fa-praying-hands"></i> Thanks</span>
+            <span class="chip"><i class="fa-solid fa-fist-raised"></i> A</span>
+            <span class="chip"><i class="fa-solid fa-hand-point-up"></i> B</span>
+            <span class="chip"> <i class="fa-solid fa-hand-peace"></i> C</span>
           </div>
         </div>
 
@@ -114,7 +119,7 @@
 
   <!-- FOOTER-->
   <footer class="footer">
-    <p>Built with ❤️ using Node.js · Python · MediaPipe · OpenCV</p>
+    <p>Built with Node.js · Python · MediaPipe · OpenCV</p>
   </footer>
 
   <script src="app.js"></script>

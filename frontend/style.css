@@ -64,6 +64,23 @@ body {
   background-size: 32px 32px;
 }
 
+.panel-title i,
+.btn i,
+.chip i,
+.nav-icon i{
+  margin-right:8px;
+  color:rgb(247, 205, 20);
+}
+
+.toggle-icon i{
+  color:var(--text-primary);
+}
+
+.placeholder-icon i{
+  font-size:3rem;
+  opacity:.5;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -489,7 +506,8 @@ body {
   text-align: center;
   padding: 1rem;
   font-size: 0.75rem;
-  color: var(--text-dim);
+  color:rgb(85, 115, 234);
   border-top: 1px solid var(--border);
   background: var(--bg-secondary);
+  font-weight:300;
 }
