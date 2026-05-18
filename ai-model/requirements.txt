@@ -1,0 +1,8 @@
+# Python dependencies for SignSpeak AI module
+# Install all with: pip install -r requirements.txt
+
+flask==3.0.0          # Lightweight Python web server
+flask-cors==4.0.0     # Allow cross-origin requests from Node.js
+mediapipe==0.10.9     # Google's hand tracking library
+opencv-python==4.9.0.80  # Image processing (cv2)
+numpy==1.26.3         # Array math (required by OpenCV and MediaPipe)
